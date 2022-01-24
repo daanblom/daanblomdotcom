@@ -4,7 +4,7 @@ import "./main.css";
 function Hero() {
   return (
     <div className="container hero--image shadow-sm h100 br">
-      <div className="container d-flex h-100 h-md-0">
+      <div className="container d-flex h-100 h-md-0 text-reveal">
         <div className="col col-12 col-md-6 d-inline-flex">
           <div className="hero--padding py-md-0 hero--textbox text-white">
             <h1 className="text-left">Title</h1>
