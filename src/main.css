@@ -1,0 +1,114 @@
+/* body * {
+  border: 1px solid red;
+} */
+
+/* html {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+img,
+picture,
+video,
+.hero--image {
+  filter: invert(1) hue-rotate(180deg);
+} */
+
+@font-face {
+  font-family: "OSBI";
+  src: URL("./fonts/OpenSauceOne-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OS";
+  src: URL("./fonts/OpenSauceOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OSI";
+  src: URL("./fonts/OpenSauceOne-Italic.ttf") format("truetype");
+}
+
+body * {
+  font-family: "OS";
+  font-size: 15px;
+}
+
+.OSBI {
+  font-family: "OSBI";
+}
+
+.OS {
+  font-family: "OS";
+}
+
+.OSI {
+  font-family: "OSI";
+}
+
+.nav ul li {
+  list-style-type: none;
+}
+
+.nav {
+  align-items: center;
+}
+
+.br {
+  border-radius: 0px;
+}
+
+.hero--image {
+  background-image: url("./media/ukraine.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero--logo {
+  background-image: url("./media/me.png");
+  width: 400px;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  align-self: center;
+  margin: auto;
+}
+
+.hero--textbox {
+  margin: auto;
+  max-width: 250px;
+}
+
+.hero--padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.link {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.up {
+  margin-top: -30px;
+}
+
+.top--bg {
+  background: rgb(255, 255, 255);
+}
+
+.bg {
+  background-image: url("media/diamond2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
