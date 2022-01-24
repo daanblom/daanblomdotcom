@@ -1,6 +1,7 @@
 import React from "react";
 import "./main.css";
-// import welcome from "./welcome";
+import "./video-react.css";
+import { Player, BigPlayButton, PosterImage } from "video-react";
 
 function Top() {
   return (
@@ -11,14 +12,12 @@ function Top() {
           <div className="col-12 col-md-10">
             <div className="up top--bg br shadow-lg p-3 p-md-4">
               <h1 className="OS mb-3">Title.</h1>
-              <div id="greeting"></div>
-              <video width="100%" height="100%" controls>
-                <source
-                  src="https://www.daanblom.com/reel0.mp4"
-                  type="video/mp4"
-                ></source>
-                Your browser does not support the video tag.
-              </video>
+              <Player
+                src="https://www.daanblom.com/reel0.mp4"
+                poster="/media/posterframe.png"
+              >
+                <BigPlayButton position="center" />
+              </Player>
               <div className="col-12 col-md-8 d-inline-flex">
                 <p className="m-0 mt-3">
                   Lorem Khaled Ipsum is a major key to success. How’s business?
