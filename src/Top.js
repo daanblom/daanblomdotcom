@@ -2,6 +2,7 @@ import React from "react";
 import "./main.css";
 import "./video-react.css";
 import { Player, BigPlayButton, PosterImage } from "video-react";
+import PosterFrame from "../src/media/posterframe.png";
 
 function Top() {
   return (
@@ -14,7 +15,7 @@ function Top() {
               <h1 className="OS mb-3">Title.</h1>
               <Player
                 src="https://www.daanblom.com/reel0.mp4"
-                poster="/media/posterframe.png"
+                poster={PosterFrame}
               >
                 <BigPlayButton position="center" />
               </Player>

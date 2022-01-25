@@ -378,36 +378,36 @@ body.video-react-full-window .video-react-fullscreen {
 }
 @keyframes video-react-spinner-fade {
   0% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
   20% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
   35% {
     border-top-color: white;
   }
   60% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
   100% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
 }
 @-webkit-keyframes video-react-spinner-fade {
   0% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
   20% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
   35% {
     border-top-color: white;
   }
   60% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
   100% {
-    border-top-color: #73859f;
+    border-top-color: black;
   }
 }
 .video-react .video-react-big-play-button {
@@ -423,8 +423,8 @@ body.video-react-full-window .video-react-fullscreen {
   cursor: pointer;
   opacity: 1;
   border: 0.06666em solid #fff;
-  background-color: #2b333f;
-  background-color: rgba(43, 51, 63, 0.7);
+  background-color: black;
+  background-color: black;
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   border-radius: 0.3em;
@@ -446,8 +446,8 @@ body.video-react-full-window .video-react-fullscreen {
 .video-react .video-react-big-play-button:focus {
   outline: 0;
   border-color: #fff;
-  background-color: #73859f;
-  background-color: rgba(115, 133, 159, 0.5);
+  background-color: black 0.4;
+  background-color: black 0.4;
   -webkit-transition: all 0s;
   -moz-transition: all 0s;
   -o-transition: all 0s;
@@ -1155,4 +1155,33 @@ body.video-react-full-window .video-react-fullscreen {
 .video-react video::-webkit-media-text-track-container {
   -webkit-transform: translateY(-30px);
   transform: translateY(-30px);
+}
+
+/* CUSTOM */
+
+.video-react .video-react-big-play-button {
+  font-size: 3em;
+  line-height: 3;
+  height: 3em;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.222);
+  border-radius: 50%;
+}
+
+.video-react .video-react-big-play-button:hover {
+  background-color: rgba(0, 0, 0, 0.222);
+}
+
+.video-react .video-react-big-play-button:active {
+  background-color: rgba(0, 0, 0, 0.222);
+}
+.video-react-big-play-button {
+  background-color: rgba(0, 0, 0, 0.222);
 }

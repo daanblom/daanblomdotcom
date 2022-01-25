@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Top from "./Top";
 import Footer from "./Footer";
+import ShopHeader from "./ShopHeader";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Top />
-      <Footer />
+      <ShopHeader />
     </div>
   );
 }
