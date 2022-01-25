@@ -2,17 +2,6 @@
   border: 1px solid red;
 } */
 
-/* html {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-img,
-picture,
-video,
-.hero--image {
-  filter: invert(1) hue-rotate(180deg);
-} */
-
 @font-face {
   font-family: "OSBI";
   src: URL("./fonts/OpenSauceOne-BlackItalic.ttf") format("truetype");
@@ -122,4 +111,30 @@ body * {
 
 .shop--video {
   background-image: url(./media/ShopHeader.webm);
+}
+
+.shop--card {
+  height: 100px;
+  margin-top: -65px;
+  position: relative;
+  z-index: 100000;
+  background-color: white;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
 }

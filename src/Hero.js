@@ -31,7 +31,7 @@ function Hero() {
           </div>
         </div>
         <div className="col col-12 col-md-6 d-none d-md-inline-flex">
-          <div className="hero--logo"></div>
+          <div className="hero--logo my-4"></div>
         </div>
       </div>
     </div>

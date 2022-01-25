@@ -13,6 +13,7 @@ function App() {
       <Hero />
       <Top />
       <ShopHeader />
+      <Footer />
     </div>
   );
 }
