@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Top from "./Top";
 import Footer from "./Footer";
 import ShopHeader from "./ShopHeader";
+import Scroll from "./Scroll";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Top />
       <ShopHeader />
+      <Scroll />
       <Footer />
     </div>
   );
