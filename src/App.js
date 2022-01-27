@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Top from "./Top";
@@ -16,6 +15,7 @@ function App() {
       <ShopHeader />
       <Scroll />
       <Footer />
+      <Lines />
     </div>
   );
 }
