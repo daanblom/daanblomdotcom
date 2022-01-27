@@ -142,3 +142,13 @@ button:hover {
 .scroll {
   overflow: hidden;
 }
+
+.video {
+  height: 400px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

@@ -1,7 +1,24 @@
-import HoverVideoPlayer from "react-hover-video-player";
-import video from "../src/media/ShopHeader.mp4";
+import $ from "jquery";
 
 function ShopHeader() {
+  var video = document.getElementById("video");
+  var intervalRewind;
+
+  $("#video")
+    .on("mouseover", function (event) {
+      clearInterval(intervalRewind);
+      this.play();
+    })
+    .on("mouseout", function (event) {
+      intervalRewind = setInterval(function () {
+        video.pause();
+        video.currentTime -= 0.1;
+        if (video.currentTime == 0) {
+          clearInterval(intervalRewind);
+        }
+      }, 50);
+    });
+
   return (
     <div className="container">
       <div className="col-12 col-md-8 pt-5 m-auto ">
@@ -14,12 +31,12 @@ function ShopHeader() {
       </div>
       <div className=""></div>
       <div className="col">
-        <HoverVideoPlayer
-          videoSrc={video}
-          disablePictureInPicture={false}
-          loop={false}
-          restartOnPaused
-        />
+        <video id="video" muted className="w-100">
+          <source
+            src="https://www.daanblom.com/ShopHeader.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
       </div>
       <div className="row">
         <div className="col-1 col-md-3"></div>
@@ -38,3 +55,12 @@ function ShopHeader() {
 }
 
 export default ShopHeader;
+
+{
+  /* <HoverVideoPlayer
+videoSrc={video}
+disablePictureInPicture={false}
+loop={false}
+restartOnPaused
+/> */
+}
