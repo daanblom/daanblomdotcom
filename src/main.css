@@ -72,13 +72,42 @@ body * {
   padding-bottom: 60px;
 }
 
-.link {
-  color: rgb(204, 204, 204);
+.link a {
+  font-family: sans-serif;
   text-decoration: none;
+  color: gray;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+  padding: 3px 0px;
 }
 
-.link:hover {
-  color: rgb(0, 0, 0);
+.link a::after {
+  content: "";
+  background: black;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.16s all 0.025s;
+}
+
+.link a::after {
+  left: 50%;
+  right: 50%;
+}
+
+.link a:hover ~ a::after {
+  left: 0;
+  right: 100%;
+}
+
+.link a:hover {
+  color: black;
+}
+
+.link a:hover::after {
+  left: 0;
+  right: 0;
 }
 
 .logo {

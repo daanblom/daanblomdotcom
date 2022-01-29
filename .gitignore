@@ -9,6 +9,10 @@
 /coverage
 test.html
 
+# backup
+
+/BACKUP
+
 # production
 /build
 

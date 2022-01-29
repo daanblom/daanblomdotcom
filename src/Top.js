@@ -1,12 +1,30 @@
-import React from "react";
 import "./main.css";
 import "./video-react.css";
 import { Player, BigPlayButton, PosterImage } from "video-react";
 import PosterFrame from "../src/media/posterframe.png";
 
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+
 function Top() {
+  const [isAnimating, setIsAnimating] = useState(false);
+
   return (
     <div className="container">
+      <motion.div
+        className=""
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1,
+          delay: 0,
+        }}
+        viewport={{ once: true }}
+      ></motion.div>
       <div className="bg">
         <div className="row">
           <div className="col-0 col-md-1"></div>

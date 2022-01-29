@@ -1,33 +1,32 @@
-import $ from "jquery";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
 
 function ShopHeader() {
-  var video = document.getElementById("video");
-  var intervalRewind;
-
-  $("#video")
-    .on("mouseover", function (event) {
-      clearInterval(intervalRewind);
-      this.play();
-    })
-    .on("mouseout", function (event) {
-      intervalRewind = setInterval(function () {
-        video.pause();
-        video.currentTime -= 0.1;
-        if (video.currentTime == 0) {
-          clearInterval(intervalRewind);
-        }
-      }, 50);
-    });
+  const [isAnimating, setIsAnimating] = useState(false);
 
   return (
     <div className="container">
-      <div className="col-12 col-md-8 pt-5 m-auto ">
-        <h1>title.</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          accumsan in nisl ut hendrerit. Praesent dictum massa lectus, quis
-          ullamcorper velit pharetra sed.
-        </p>
+      <div className="col-12 col-md-8 pt-5 m-auto titlein">
+        <motion.div
+          className=""
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0,
+          }}
+        >
+          <h1>title.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            accumsan in nisl ut hendrerit. Praesent dictum massa lectus, quis
+            ullamcorper velit pharetra sed.
+          </p>
+        </motion.div>
       </div>
       <div className=""></div>
       <div className="col">
