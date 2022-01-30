@@ -6,8 +6,8 @@ function Navbar() {
   return (
     <div className="container">
       <div className="nav p-3">
-        <div className="col col-12 col-md-6 d-inline-flex align-items-center justify-content-center justify-content-md-start pb-2 pb-md-0 OSBI text-black logo">
-          DAANBLOM.COM
+        <div className="col col-12 col-md-6 d-inline-flex align-items-center justify-content-center justify-content-md-start pb-2 pb-md-0 logo pointer-none">
+          <a className="OSBI">DAANBLOM.COM</a>
         </div>
         <div className="col col-12 col-md-6 d-inline-flex justify-content-center justify-content-md-end">
           <motion.div
@@ -45,6 +45,10 @@ function Navbar() {
                 </a>
               </li>
             </ul>
+            <label className="switch ">
+              <input type="checkbox"></input>
+              <span className="slider round shadow-sm"></span>
+            </label>
           </motion.div>
         </div>
       </div>

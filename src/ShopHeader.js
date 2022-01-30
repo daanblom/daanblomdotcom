@@ -41,7 +41,9 @@ function ShopHeader() {
         <div className="col-1 col-md-3"></div>
         <div className="col-10 col-md-6">
           <div className="shop--card p-4 shadow-lg">
-            <button onClick="">Shop now.</button>
+            <button onClick="" className="btn-grad">
+              Shop now.
+            </button>
           </div>
         </div>
         <div className="col-1 col-md-3"></div>
