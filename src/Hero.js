@@ -27,8 +27,17 @@ function Hero() {
               <h1 className="text-left">Title</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                accumsan in nisl ut hendrerit. Praesent dictum massa lectus,
-                quis ullamcorper velit pharetra sed.
+                accumsan in nisl ut hendrerit.<br></br>
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText("hello@daanblom.com");
+                    alert("Copied hello@daanblom.com to your clipboard");
+                  }}
+                  className="btn-grad ml-0"
+                  id="myInput"
+                >
+                  Hello@daanblom.com
+                </button>
               </p>
             </motion.div>
           </div>
